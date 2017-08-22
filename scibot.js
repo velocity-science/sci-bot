@@ -10,7 +10,7 @@ const config = require('nconf')
 	.file('defaults', { file: 'config/default.json' });
 
 
-Slack.setInfo('scibot', ':atom_symbol: :');
+Slack.setInfo('scibot', ':atom_symbol:');
 
 const loadBots = ()=>{
 	return new Promise((resolve, reject)=>{
@@ -32,7 +32,7 @@ const loadBots = ()=>{
 	})
 };
 
-Slack.connect(config.get('slack_token'))
+Slack.connect(config.get('bot_token'))
 	.then(()=>loadBots())
 	.then(()=>Slack.debug('Rebooted!'))
-	.catch((err)=>Slack.error(err));
+	.catch((err)=>Slack.error('ERR', err));
