@@ -1,0 +1,29 @@
+{
+  "name": "sci-bot",
+  "version": "1.0.0",
+  "description": "A slackbot for Velocity Science",
+  "main": "scibot.js",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "nconf": "^0.8.4",
+    "pico-slack": "^1.3.0",
+    "pos": "^0.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node scibot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/velocity-science/sci-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/velocity-science/sci-bot/issues"
+  },
+  "homepage": "https://github.com/velocity-science/sci-bot#readme"
+}

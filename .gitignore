@@ -7,3 +7,5 @@ build
 
 #NPM Folder of Libraries
 node_modules
+
+config/local.json
